@@ -1,0 +1,4 @@
+[custom.all.vocabulary-core]
+type   = "local"
+path   = "core"
+ipkg   = "vocabulary-core.ipkg"

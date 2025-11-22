@@ -1,0 +1,13 @@
+package vocabulary-core
+version    = 0.0.1
+authors    = "stefan-hoeck"
+brief      = "Core data types for the Vocabulary project"
+
+depends    = base      >= 0.8.0
+           , barbies
+           , finite
+           , monocle
+
+modules    = Vocabulary.WordType
+
+sourcedir  = "src"
