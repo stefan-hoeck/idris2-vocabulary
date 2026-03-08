@@ -1,0 +1,23 @@
+package vocabulary-server
+version    = 0.0.1
+authors    = "stefan-hoeck"
+brief      = "SCGI server for the Vocabulary project"
+
+depends    = base      >= 0.8.0
+           , async-epoll
+           , crypt
+           , filepath
+           , getopts
+           , monocle
+           , scgi
+           , sqlite3-streams
+           , vocabulary-core
+
+modules    = Vocabulary.DB
+           , Vocabulary.Opts
+
+sourcedir  = "src"
+
+main       = Vocabulary.Main
+
+executable = "vocabulary-server"

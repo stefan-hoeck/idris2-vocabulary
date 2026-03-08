@@ -8,6 +8,17 @@ depends    = base      >= 0.8.0
            , finite
            , monocle
 
-modules    = Vocabulary.WordType
+modules    = Vocabulary.Internal.Derive
+
+           , Vocabulary.Gender
+           , Vocabulary.Language
+           , Vocabulary.Unit
+           , Vocabulary.User
+           , Vocabulary.Word
+           , Vocabulary.WordType
+
+           , Vocabulary.I18n
+           , Vocabulary.I18n.DE
+           , Vocabulary.I18n.EN
 
 sourcedir  = "src"

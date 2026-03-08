@@ -2,3 +2,14 @@
 type   = "local"
 path   = "core"
 ipkg   = "vocabulary-core.ipkg"
+
+[custom.all.vocabulary-server]
+type   = "local"
+path   = "server"
+ipkg   = "vocabulary-server.ipkg"
+
+[custom.all.scgi]
+type   = "git"
+url    = "https://github.com/idris-community/idris2-scgi"
+commit = "latest:main"
+ipkg   = "scgi.ipkg"

@@ -12,7 +12,7 @@ public export
 data WordField : Type where
   WID          : WordField
   WWord        : WordField
-  WLanguage    : WordField
+  WUnit        : WordField
   WType        : WordField
   WTranslation : WordField
 
@@ -22,9 +22,9 @@ public export
 record WordB (f : WordField -> Type) where
   constructor MkWord
   nr          : f WID
-  word        : f WWord
-  language    : f WLanguage
+  unit        : f WUnit
   type        : f WType
+  word        : f WWord
   translation : f WTranslation
 
 -- %runElab derive "WordB"
